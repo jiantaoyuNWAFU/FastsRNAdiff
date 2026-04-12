@@ -18,7 +18,7 @@ A highly efficient software for screening differentially expressed small RNA clu
 
 ## Introduction
 
-FastsRNAdiff is a high-performance, user-friendly tool designed for identifying differentially expressed small RNA (sRNA) clusters between wild-type (WT) and mutant (MUT) samples. It integrates end-to-end data processing, including preprocessing (filtering invalid entries), intersection of common loci, statistical testing (Chi-square test for large samples, Fisher's exact test for small samples/zero values), q-value calculation (FDR adjustment), and multi-dimensional visualization. The tool is optimized for efficiency with parallel computing support, making it suitable for large-scale sRNA sequencing datasets.At the same time, to facilitate user adoption, we have also developed a corresponding web platform [FastsRNAdiff](http://10.105.10.204).
+FastsRNAdiff is a high-performance, user-friendly tool designed for identifying differentially expressed small RNA (sRNA) clusters between wild-type (WT) and mutant (MUT) samples. It integrates end-to-end data processing, including preprocessing (filtering invalid entries), intersection of common loci, statistical testing (Chi-square test for large samples, Fisher's exact test for small samples/zero values), q-value calculation (FDR adjustment), and multi-dimensional visualization. The tool is optimized for efficiency with parallel computing support, making it suitable for large-scale sRNA sequencing datasets.At the same time, to facilitate user adoption, we have also developed a corresponding web platform [FastsRNAdiff](https://ciebioinfo.nwafu.edu.cn/FastsRNAdiff/).
 
 ## Version
 
