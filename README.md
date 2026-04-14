@@ -3,6 +3,7 @@
 A highly efficient software for screening differentially expressed small RNA clusters.
 
 ## Table of Contents
+* [Citation](#citation)
 * [Introduction](#introduction)
 * [Version](#version)
 * [Authors](#authors)
@@ -15,6 +16,12 @@ A highly efficient software for screening differentially expressed small RNA clu
 * [Output Files Explanation](#output-files-explanation)
 * [Visualization Results](#visualization-results)
 * [Troubleshooting](#troubleshooting)
+
+## Citation
+
+If you use FastsRNAdiff in support of your work, please cite:
+
+* Xue S., Zhang X., Gao Y., Wang Y., Zou Q., and Yu J.* 2026. FastsRNAdiff: A Tool for Rapid Identification of Significantly Differentially Expressed Small RNA Clusters. Bioinformatics (under review).
 
 ## Introduction
 
