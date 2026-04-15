@@ -37,7 +37,7 @@ Xue, Zhang and Gao etc.
 
 Contact Email: jiantao.yu@nwafu.edu.cn
 
-Repository URL: [https://github.com/jiaotaoyuNWAFU/FastsRNAdiff](https://github.com/jiaotaoyuNWAFU/FastsRNAdiff)
+Repository URL: [https://github.com/jiantaoyuNWAFU/FastsRNAdiff](https://github.com/jiantaoyuNWAFU/FastsRNAdiff)
 
 ## Prerequisites
 
@@ -79,7 +79,7 @@ If you want to view the source code or run it using the command line, follow the
 First, download the tool from GitHub (replace with your actual repository URL):
 
 ```
-git clone https://github.com/jiaotaoyuNWAFU/FastsRNAdiff.git
+git clone https://github.com/jiantaoyuNWAFU/FastsRNAdiff.git
 ```
 
 #### 2. Install Python Dependencies
@@ -473,7 +473,7 @@ AnalysisRst/  # Root directory (customizable via --output-dir)
 
 * `StaticsRst/StaticsResult_*.txt`: If missing, the statistical test failed (check for non-numeric values in `readCounts/` files).
 
-1. **Contact Support**: For persistent issues, send the following to jiantao.yu@nwafu.edu.cn:
+3. **Contact Support**: For persistent issues, send the following to jiantao.yu@nwafu.edu.cn:
 
 * Full command line used.
 
