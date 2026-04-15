@@ -178,11 +178,11 @@ Standardizing the coordinates of small RNA clusters is a key prerequisite for en
 
 Rep-total (repeat-normalized total reads) is a critical metric for sRNA analysis. It normalizes read counts by accounting for multi-mapped reads (each read contributes `1/N`, where `N` is the number of mappings for that read, which can be calculated from the BAM file).
 
-You should provide the BAM file, and use the provided `tools/RegionRepCalc.py` script to compute it.
+You should provide the BAM file, and use the provided `tools/RegionRepCalc.py` module to compute it.
 
-#### 2.1 Prerequisites for the Script
+#### 2.1 Prerequisites for the Module
 
-* **BAM File**: Aligned reads file (The multi-mapping information must be retained.).
+* **BAM File**: Aligned reads file (eg. filtered.bam).
 
 * **BAM Index File**: A `.bam.bai` file (generated via `samtools index <BAM>` if missing).
 
@@ -197,13 +197,14 @@ You should provide the BAM file, and use the provided `tools/RegionRepCalc.py` s
 
 Among them, `#Locus` is a mandatory item, `Name` and `DicerCall` are optional. For `DicerCall`, we recommend that users adopt it as it will affect the accuracy of downstream analysis results. If users do not provide it, we will default `DicerCall` to **24nt** in the future.
 
-#### 2.2 Run the Script
+#### 2.2 Run the Module
 
 ```
-python RegionRepCalc.py <BAM>  <sRNAcluster> <output.txt>
+# Before use, please check tools/README.md to complete the installation.
+RegionRepCalc <BAM file>  <sRNAcluster file> <output.txt>
 ```
 
-#### 2.3 Output of the Script
+#### 2.3 Output of the Module
 
 A file named `<output.txt>` with the following columns:
 
@@ -217,7 +218,7 @@ A file named `<output.txt>` with the following columns:
 
 ### 3. Step 3: Obtain Total Mapped Reads
 
-Total mapping reads reflects the total number of reads in the sample that can be successfully aligned to the reference genome. This value can be used as a basis for subsequent standardization to correct for differences in the total number of aligned reads between different samples. When calculating this indicator, the unique mapping read segment will be fully counted, and each multiple mapping read segment will only be counted once regardless of its genome alignment frequency. This value can be automatically calculated through `RegionRepCalc.py`.
+Total mapping reads reflects the total number of reads in the sample that can be successfully aligned to the reference genome. This value can be used as a basis for subsequent standardization to correct for differences in the total number of aligned reads between different samples. When calculating this indicator, the unique mapping read segment will be fully counted, and each multiple mapping read segment will only be counted once regardless of its genome alignment frequency. This value can be automatically calculated through `RegionRepCalc.py` module.
 
 #### Key Note:
 
