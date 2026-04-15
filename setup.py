@@ -18,8 +18,8 @@ setup(
         ],
     },
 
-    author="Xue, Xu , Gao and etc.",
-    author_email="2023013376@nwafu.edu.cn",
+    author="Xue S., Zhang X. , Gao Y. , etc.",
+    author_email="jiantao.yu@nwafu.edu.cn",
     description="A highly efficient software for screening differentially expressed small RNA clusters",
     python_requires=">=3.7"
 )
